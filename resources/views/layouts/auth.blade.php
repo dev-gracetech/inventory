@@ -55,8 +55,11 @@
             <div class="container container-tight py-4">
                 <div class="text-center mb-4">
                     <a href="{{ url('/') }}" class="navbar-brand navbar-brand-autodark">
-                        <img src="{{ asset('static/logo.svg') }}" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                        {{-- <img src="{{ asset('static/logo.svg') }}" width="110" height="32" alt="Tabler" class="navbar-brand-image"> --}}
+                        <img width="200" height="200" src="https://img.icons8.com/fluency/96/warehouse-1.png" alt="warehouse-1" 
+                            class="navbar-brand-image"/>
                     </a>
+                    <h1>Sales and Inventory</h1>
                 </div>
 
                 @include('components.alert')

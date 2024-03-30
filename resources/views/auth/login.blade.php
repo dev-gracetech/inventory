@@ -62,16 +62,21 @@
                     Sign in
                 </button>
             </div>
+            <div class="text-center text-secondary mt-3">
+                <a href="{{ route('password.request') }}">Forgot password?</a>
+            </div>
         </form>
     </div>
 </div>
 <div class="text-center text-secondary mt-3">
-    Don't have account yet? <a href="{{ route('register') }}" tabindex="-1">
+    {{-- Don't have account yet? <a href="{{ route('register') }}" tabindex="-1">
         Sign up
-    </a>
+    </a> --}}
 
-    <span class="form-label-description">
-        <a href="{{ route('password.request') }}">I forgot password</a>
-    </span>
+    {{-- <span class="form-label-description"> --}}
+        
+    {{-- </span> --}}
+    Copyright &copy; {{ now()->year }}
+    <a href="." class="link-secondary">Grace Technology</a>. All rights reserved.
 </div>
 @endsection
